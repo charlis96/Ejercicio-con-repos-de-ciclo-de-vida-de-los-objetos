@@ -56,6 +56,7 @@ namespace ConsoleApplication
                 Train t2 = new Train("Last Train To London");
                 Train t3 = new Train("Runaway Train");
                 Console.WriteLine($"{t1 == t2}, {t2 == t3}");
+                Console.WriteLine(Train.count);
             }
             /*
             El motivo por el cual ninguna de las comparaciones es verdadera es porque se crean 3

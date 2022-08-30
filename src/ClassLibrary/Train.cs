@@ -13,14 +13,12 @@ namespace ClassLibrary
     /// </summary>
     public class Train
     {
-        private static int count = 0;
-        public int Count { get; private set; }
+        public static int count { get; set; } = 0;
         public string Name { get; private set; }
         public Train(string name)
         {
             this.Name = name;
             count++;
-            this.Count = count;
             Console.WriteLine($"Creando tren {this.Name}...");
         }
         ~Train()
