@@ -13,7 +13,7 @@ namespace ClassLibrary
     /// </summary>
     public class Train
     {
-        public static int count { get; set; } = 0;
+        private static int count { get; set; } = 0;
         public string Name { get; private set; }
         public Train(string name)
         {
